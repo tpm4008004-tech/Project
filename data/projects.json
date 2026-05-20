@@ -1,0 +1,341 @@
+[
+  {
+    "id": "1778334255654",
+    "title": "Bhubaneswar",
+    "description": "",
+    "tasks": [
+      {
+        "id": "t1",
+        "name": "Briefing",
+        "subtasks": [],
+        "probableTiming": "10",
+        "status": "Done",
+        "sequenceIndex": 0,
+        "comments": [],
+        "completionDate": "2026-05-10",
+        "description": ""
+      },
+      {
+        "id": "t2",
+        "name": "site measurements",
+        "subtasks": [],
+        "probableTiming": "3",
+        "status": "Done",
+        "sequenceIndex": 1,
+        "comments": [],
+        "completionDate": "2026-05-14",
+        "description": "Done by the franchise owner "
+      },
+      {
+        "id": "t4",
+        "name": "architect finanlising",
+        "subtasks": [
+          {
+            "id": "1778333848093b8s3d",
+            "text": "architect fees",
+            "status": "Done",
+            "comments": []
+          }
+        ],
+        "probableTiming": "14",
+        "status": "Done",
+        "sequenceIndex": 2,
+        "comments": []
+      },
+      {
+        "id": "t3",
+        "name": "Mood B zonong",
+        "subtasks": [],
+        "probableTiming": "95",
+        "status": "Done",
+        "sequenceIndex": 3,
+        "comments": []
+      },
+      {
+        "id": "t5",
+        "name": "franchise fees and agreement",
+        "subtasks": [],
+        "probableTiming": "10",
+        "status": "Done",
+        "sequenceIndex": 4,
+        "comments": []
+      },
+      {
+        "id": "1778155320728",
+        "name": "2D drawing",
+        "subtasks": [
+          {
+            "id": "1778333927591c6s3o",
+            "text": "2d",
+            "status": "Done",
+            "comments": []
+          },
+          {
+            "id": "17783339309932p89n",
+            "text": "3d",
+            "status": "Done",
+            "comments": []
+          }
+        ],
+        "probableTiming": "7",
+        "status": "In Progress",
+        "sequenceIndex": 5,
+        "comments": []
+      },
+      {
+        "id": "1778333916989",
+        "name": "Execution and HR",
+        "subtasks": [],
+        "status": "In Progress",
+        "sequenceIndex": 6,
+        "comments": []
+      },
+      {
+        "id": "1778333946755",
+        "name": "Furniture",
+        "subtasks": [
+          {
+            "id": "177833402656080zpx",
+            "text": "Quotation",
+            "status": "Done",
+            "comments": []
+          },
+          {
+            "id": "1778334037854xk1mr",
+            "text": "decision",
+            "status": "Done",
+            "comments": []
+          }
+        ],
+        "status": "To Do",
+        "sequenceIndex": 7,
+        "comments": []
+      },
+      {
+        "id": "1778334018652",
+        "name": "Signage",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 8,
+        "comments": []
+      },
+      {
+        "id": "1778334125858",
+        "name": "Corkery",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 9,
+        "comments": []
+      },
+      {
+        "id": "1778334186606",
+        "name": "POS",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 10,
+        "comments": []
+      },
+      {
+        "id": "1778334193437",
+        "name": "sakshi Auditing",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 11,
+        "comments": []
+      },
+      {
+        "id": "1778334203934",
+        "name": "NSO",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 12,
+        "comments": []
+      },
+      {
+        "id": "1778334217968",
+        "name": "Ar. auditing",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 13,
+        "comments": []
+      },
+      {
+        "id": "1778334227263",
+        "name": "BOSS ",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 14,
+        "comments": []
+      }
+    ],
+    "createdAt": "2026-05-09T13:44:15.654Z",
+    "updatedAt": "2026-05-11T13:10:47.843Z"
+  },
+  {
+    "id": "1778334382077",
+    "title": "Noida",
+    "description": "",
+    "tasks": [
+      {
+        "id": "t1",
+        "name": "Briefing",
+        "subtasks": [],
+        "probableTiming": "10",
+        "status": "To Do",
+        "sequenceIndex": 0,
+        "comments": []
+      },
+      {
+        "id": "t2",
+        "name": "site measurements",
+        "subtasks": [],
+        "probableTiming": "3",
+        "status": "To Do",
+        "sequenceIndex": 1,
+        "comments": []
+      },
+      {
+        "id": "t4",
+        "name": "architect finanlising",
+        "subtasks": [
+          {
+            "id": "1778333848093b8s3d",
+            "text": "architect fees",
+            "status": "To Do",
+            "comments": []
+          }
+        ],
+        "probableTiming": "14",
+        "status": "To Do",
+        "sequenceIndex": 2,
+        "comments": []
+      },
+      {
+        "id": "t3",
+        "name": "Mood B zonong",
+        "subtasks": [],
+        "probableTiming": "95",
+        "status": "To Do",
+        "sequenceIndex": 3,
+        "comments": []
+      },
+      {
+        "id": "t5",
+        "name": "franchise fees and agreement",
+        "subtasks": [],
+        "probableTiming": "10",
+        "status": "To Do",
+        "sequenceIndex": 4,
+        "comments": []
+      },
+      {
+        "id": "1778155320728",
+        "name": "2D drawing",
+        "subtasks": [
+          {
+            "id": "1778333927591c6s3o",
+            "text": "2d",
+            "status": "To Do",
+            "comments": []
+          },
+          {
+            "id": "17783339309932p89n",
+            "text": "3d",
+            "status": "To Do",
+            "comments": []
+          }
+        ],
+        "probableTiming": "7",
+        "status": "To Do",
+        "sequenceIndex": 5,
+        "comments": []
+      },
+      {
+        "id": "1778333916989",
+        "name": "Execution and HR",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 6,
+        "comments": []
+      },
+      {
+        "id": "1778333946755",
+        "name": "Furniture",
+        "subtasks": [
+          {
+            "id": "177833402656080zpx",
+            "text": "Quotation",
+            "status": "To Do",
+            "comments": []
+          },
+          {
+            "id": "1778334037854xk1mr",
+            "text": "decision",
+            "status": "To Do",
+            "comments": []
+          }
+        ],
+        "status": "To Do",
+        "sequenceIndex": 7,
+        "comments": []
+      },
+      {
+        "id": "1778334018652",
+        "name": "Signage",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 8,
+        "comments": []
+      },
+      {
+        "id": "1778334125858",
+        "name": "Corkery",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 9,
+        "comments": []
+      },
+      {
+        "id": "1778334186606",
+        "name": "POS",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 10,
+        "comments": []
+      },
+      {
+        "id": "1778334193437",
+        "name": "sakshi Auditing",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 11,
+        "comments": []
+      },
+      {
+        "id": "1778334203934",
+        "name": "NSO",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 12,
+        "comments": []
+      },
+      {
+        "id": "1778334217968",
+        "name": "Ar. auditing",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 13,
+        "comments": []
+      },
+      {
+        "id": "1778334227263",
+        "name": "BOSS ",
+        "subtasks": [],
+        "status": "To Do",
+        "sequenceIndex": 14,
+        "comments": []
+      }
+    ],
+    "createdAt": "2026-05-09T13:46:22.077Z"
+  }
+]

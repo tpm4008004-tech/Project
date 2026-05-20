@@ -1,0 +1,27 @@
+[
+  {
+    "username": "admin",
+    "password": "Tarini@pm90",
+    "role": "CEO"
+  },
+  {
+    "username": "ceo",
+    "password": "ceo123",
+    "role": "CEO"
+  },
+  {
+    "username": "cpo",
+    "password": "cpo123",
+    "role": "CPO"
+  },
+  {
+    "username": "po",
+    "password": "po123",
+    "role": "PO"
+  },
+  {
+    "username": "Sakshi_PO",
+    "password": "Sakshi@123",
+    "role": "PO"
+  }
+]
