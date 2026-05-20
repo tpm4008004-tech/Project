@@ -3,9 +3,9 @@ import clientPromise from "@/lib/mongodb";
 
 // Role hierarchy — each role can only create roles below them
 const ROLE_HIERARCHY = {
-  "CEO": ["CPO", "PO", "Architect", "Franchise Owner"],
-  "CPO": ["PO", "Architect", "Franchise Owner"],
-  "PO": ["Architect", "Franchise Owner"],
+  "CEO": ["CPO", "PO", "Operations Head", "Operations Team"],
+  "CPO": ["PO", "Operations Head", "Operations Team"],
+  "PO": ["Operations Head", "Operations Team"],
 };
 
 async function getUsersCollection() {

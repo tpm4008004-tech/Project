@@ -14,8 +14,8 @@ async function getTemplate() {
   
   if (!templateDoc) {
     const defaultTemplate = [
-      { id: "t1", name: "architect visit", subtasks: [] },
-      { id: "t2", name: "architect drawing", subtasks: [] },
+      { id: "t1", name: "operations head visit", subtasks: [] },
+      { id: "t2", name: "operations team drawing", subtasks: [] },
       { id: "t3", name: "construction", subtasks: [] },
       { id: "t4", name: "interior designing", subtasks: [] },
       { id: "t5", name: "product and kitchen dispatch", subtasks: [] }

@@ -6,17 +6,17 @@ import Link from "next/link";
 import styles from "../page.module.css";
 
 const ROLE_HIERARCHY = {
-  "CEO": ["CPO", "PO", "Architect", "Franchise Owner"],
-  "CPO": ["PO", "Architect", "Franchise Owner"],
-  "PO": ["Architect", "Franchise Owner"],
+  "CEO": ["CPO", "PO", "Operations Head", "Operations Team"],
+  "CPO": ["PO", "Operations Head", "Operations Team"],
+  "PO": ["Operations Head", "Operations Team"],
 };
 
 const ROLE_COLORS = {
   "CEO":              { bg: "rgba(167,139,250,0.15)", color: "#a78bfa" },
   "CPO":              { bg: "rgba(96,165,250,0.15)",  color: "#60a5fa" },
   "PO":               { bg: "rgba(52,211,153,0.15)",  color: "#34d399" },
-  "Architect":        { bg: "rgba(251,191,36,0.15)",  color: "#fbbf24" },
-  "Franchise Owner":  { bg: "rgba(249,115,22,0.15)",  color: "#f97316" },
+  "Operations Head":  { bg: "rgba(251,191,36,0.15)",  color: "#fbbf24" },
+  "Operations Team":  { bg: "rgba(249,115,22,0.15)",  color: "#f97316" },
 };
 
 export default function UsersPage() {
@@ -152,7 +152,7 @@ export default function UsersPage() {
                 className="glass-input"
                 value={newUsername}
                 onChange={e => setNewUsername(e.target.value)}
-                placeholder="e.g. john_architect"
+                placeholder="e.g. john_ops"
                 required
                 minLength={2}
               />

@@ -245,8 +245,8 @@ export default function ProjectDetail() {
                   <input
                     type="checkbox"
                     checked={task.status === "Done"}
-                    disabled={isDoneDisabled}
-                    title={isDoneDisabled ? "Complete all subtasks first" : ""}
+                    disabled={!isAdmin || isDoneDisabled}
+                    title={isDoneDisabled ? "Complete all subtasks first" : (!isAdmin ? "View only" : "")}
                     onChange={(e) => {
                       const updatedTasks = [...project.tasks];
                       updatedTasks[index].status = e.target.checked ? "Done" : "To Do";
@@ -269,6 +269,7 @@ export default function ProjectDetail() {
                         <span style={{ fontSize: '0.75rem', color: 'var(--text-secondary)' }}>📅</span>
                         <input
                           type="date"
+                          disabled={!isAdmin}
                           value={task.completionDate || ""}
                           onChange={(e) => updateTaskCompletionDate(index, e.target.value)}
                           style={{
@@ -286,6 +287,7 @@ export default function ProjectDetail() {
 
                     {/* Description — inline editable */}
                     <textarea
+                      readOnly={!isAdmin}
                       rows={task.description ? Math.min(4, (task.description.match(/\n/g) || []).length + 2) : 1}
                       value={task.description || ""}
                       onChange={(e) => {
@@ -333,6 +335,7 @@ export default function ProjectDetail() {
                           <div style={{ display: 'flex', alignItems: 'center', gap: '0.6rem', flexWrap: 'wrap' }}>
                             <input
                               type="checkbox"
+                              disabled={!isAdmin}
                               checked={isDone}
                               onChange={(e) => updateSubtaskStatus(task.id, st.id, e.target.checked ? "Done" : "To Do")}
                               style={{ cursor: 'pointer', flexShrink: 0 }}
@@ -346,6 +349,7 @@ export default function ProjectDetail() {
                               <span style={{ fontSize: '0.7rem', color: 'var(--text-secondary)' }}>📅</span>
                               <input
                                 type="date"
+                                disabled={!isAdmin}
                                 value={st.completionDate || ""}
                                 onChange={(e) => updateSubtaskCompletionDate(task.id, st.id, e.target.value)}
                                 style={{
@@ -405,19 +409,21 @@ export default function ProjectDetail() {
                 )}
 
                 {/* Add subtask */}
-                <form onSubmit={(e) => handleAddSubtask(e, task.id)} style={{ display: 'flex', gap: '0.5rem', marginTop: '0.25rem' }}>
-                  <input
-                    type="text"
-                    className="glass-input"
-                    placeholder="+ Add subtask"
-                    value={newSubtaskInput[task.id] || ""}
-                    onChange={e => setNewSubtaskInput({ ...newSubtaskInput, [task.id]: e.target.value })}
-                    style={{ padding: '0.35rem 0.7rem', fontSize: '0.88rem', width: '220px' }}
-                  />
-                  {(newSubtaskInput[task.id] || "").trim() && (
-                    <button type="submit" className="glass-button" style={{ padding: '0.35rem 0.7rem', fontSize: '0.85rem' }}>Add</button>
-                  )}
-                </form>
+                {isAdmin && (
+                  <form onSubmit={(e) => handleAddSubtask(e, task.id)} style={{ display: 'flex', gap: '0.5rem', marginTop: '0.25rem' }}>
+                    <input
+                      type="text"
+                      className="glass-input"
+                      placeholder="+ Add subtask"
+                      value={newSubtaskInput[task.id] || ""}
+                      onChange={e => setNewSubtaskInput({ ...newSubtaskInput, [task.id]: e.target.value })}
+                      style={{ padding: '0.35rem 0.7rem', fontSize: '0.88rem', width: '220px' }}
+                    />
+                    {(newSubtaskInput[task.id] || "").trim() && (
+                      <button type="submit" className="glass-button" style={{ padding: '0.35rem 0.7rem', fontSize: '0.85rem' }}>Add</button>
+                    )}
+                  </form>
+                )}
 
                 {/* Task Comments */}
                 <div style={{ marginTop: '0.75rem' }}>
