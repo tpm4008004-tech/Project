@@ -98,10 +98,7 @@ export default function Home() {
           <span className={styles.userRole}>{userRole}</span>
           {isAdmin && (
           <>
-              <Link href="/overview">
-                <button className="glass-button" style={{ background: 'rgba(167,139,250,0.15)', borderColor: 'rgba(167,139,250,0.3)' }}>📊 Overview</button>
-              </Link>
-              <Link href="/users">
+             <Link href="/users">
                 <button className="glass-button" style={{ background: 'rgba(52,211,153,0.1)', borderColor: 'rgba(52,211,153,0.25)' }}>👥 Users</button>
               </Link>
               <Link href="/settings">
@@ -112,6 +109,9 @@ export default function Home() {
               </button>
             </>
           )}
+         <Link href="/overview">
+            <button className="glass-button" style={{ background: 'rgba(167,139,250,0.15)', borderColor: 'rgba(167,139,250,0.3)' }}>📊 Overview</button>
+          </Link>
           <Link href="/change-password">
             <button className="glass-button" style={{ background: 'rgba(255,255,255,0.07)', fontSize: '0.85rem' }}>🔑 Change Password</button>
           </Link>
