@@ -104,14 +104,14 @@ export default function Home() {
               <Link href="/settings">
                 <button className="glass-button" style={{ background: 'rgba(255,255,255,0.1)' }}>⚙️ Template</button>
               </Link>
+              <Link href="/overview">
+               <button className="glass-button" style={{ background: 'rgba(167,139,250,0.15)', borderColor: 'rgba(167,139,250,0.3)' }}>📊 Overview</button>
+              </Link>
               <button className="glass-button" onClick={() => setIsModalOpen(true)}>
                 + New Project
               </button>
             </>
           )}
-         <Link href="/overview">
-            <button className="glass-button" style={{ background: 'rgba(167,139,250,0.15)', borderColor: 'rgba(167,139,250,0.3)' }}>📊 Overview</button>
-          </Link>
           <Link href="/change-password">
             <button className="glass-button" style={{ background: 'rgba(255,255,255,0.07)', fontSize: '0.85rem' }}>🔑 Change Password</button>
           </Link>
