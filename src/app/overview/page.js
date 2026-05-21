@@ -16,13 +16,6 @@ export default function Overview() {
   const router = useRouter();
 
   useEffect(() => {
-    const role = localStorage.getItem("userRole");
-    if (!role || !ADMIN_ROLES.includes(role)) {
-      alert("Access denied.");
-      router.push("/");
-      return;
-    }
-    setUserRole(role);
     fetchProjects();
   }, [router]);
 
